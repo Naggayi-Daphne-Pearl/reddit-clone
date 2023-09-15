@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+/* POST LISTS */
+/* PostList.css */
+
+.post-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-thumbnail img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Add more styles as needed for additional post content */

@@ -8,11 +8,21 @@ const PostList = ({ posts, fetchPosts }) => {
   }, [fetchPosts]);
 
   return (
-    <div>
+    <div className="post-list-container">
       <h1>Reddit Clone</h1>
-      <ul>
+      <ul className="post-list">
         {posts.map((post) => (
-          <li key={post.data.id}>{post.data.title}</li>
+          <li key={post.data.id} className="post">
+            <div className="post-thumbnail">
+              {post.data.thumbnail && (
+                <img src={post.data.thumbnail} alt="Thumbnail" />
+              )}
+            </div>
+            <div className="post-content">
+              <h2>{post.data.title}</h2>
+              {/* Add additional post content here, e.g., author, comments, etc. */}
+            </div>
+          </li>
         ))}
       </ul>
     </div>
