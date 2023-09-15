@@ -20,7 +20,8 @@ const PostList = ({ posts, fetchPosts }) => {
             </div>
             <div className="post-content">
               <h2>{post.data.title}</h2>
-              {/* Add additional post content here, e.g., author, comments, etc. */}
+              <p>Posted by u/{post.data.author}</p>
+              <p>{post.data.num_comments} comments</p>
             </div>
           </li>
         ))}

@@ -3,10 +3,11 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk"; // Import redux-thunk
 import postReducer from "../reducers/postReducer";
+import commentReducer from "../reducers/commentReducer"; // Import your comment reducer
 
 const rootReducer = combineReducers({
   postReducer,
-  // Add other reducers here if needed
+  commentReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
